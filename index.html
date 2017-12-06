@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>Sign in</title>
+	<link rel="shortcut icon" href="favicon.jpg">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<form class="form" action="">
+		<nav class="form__nav">
+			<ul class="form__menus">
+				<li class="form__menu"><a href="" class="form__link form__link--nav active">Sign in</a></li>
+				<li class="form__menu"><a href="" class="form__link form__link--nav">Join us</a></li>
+				
+			</ul>
+		</nav>
+		<fieldset class="form__group"><label for="name" class="form__label">Username</label>
+			<input class="form__field" type="text" name="username" id="name" required>
+		<label for="password" class="form__label">Password</label>
+			<input class="form__field" type="password" name="password" id="password" required>
+		</fieldset>
+			<fieldset class="form__group">
+				<input class="form__check" type="checkbox" id="check-in" name="check-in" value="check-in" checked>
+    <label class="form__label form__label--small" for="check-in">Keep me signed in</label>
+				<button class="form__submit">Sign in</button>
+				<a href="" class="form__link">Forgot password</a>
+				<a href="" class="form__link">Create an account</a>
+			</fieldset>
+	</form>
+</body>
+</html>

@@ -13,23 +13,35 @@
 	<form class="form" action="">
 		<nav class="form__nav">
 			<ul class="form__menus">
-				<li class="form__menu"><a href="" class="form__link form__link--nav active">Sign in</a></li>
-				<li class="form__menu"><a href="" class="form__link form__link--nav">Join us</a></li>
-				
+				<li class="form__menu"><a href="" class="tablinks active" onclick="openForm(event, 'sign_in')" id="defaultOpen">Sign in</a></li>
+				<li class="form__menu"><a href="" class="tablinks"onclick="openForm(event, 'join_us')">Join us</a></li>
 			</ul>
 		</nav>
-		<fieldset class="form__group"><label for="name" class="form__label">Username</label>
-			<input class="form__field" type="text" name="username" id="name" required>
+		<fieldset id="sign_in" class="tabcontent">
+		<label for="name" class="form__label">Username</label>
+		<input class="form__field" type="text" name="username" id="name" required>
 		<label for="password" class="form__label">Password</label>
-			<input class="form__field" type="password" name="password" id="password" required>
-		</fieldset>
-			<fieldset class="form__group">
-				<input class="form__check" type="checkbox" id="check-in" name="check-in" value="check-in" checked>
-    <label class="form__label form__label--small" for="check-in">Keep me signed in</label>
-				<button class="form__submit">Sign in</button>
-				<a href="" class="form__link">Forgot password</a>
-				<a href="" class="form__link">Create an account</a>
-			</fieldset>
+		<input class="form__field" type="password" name="password" id="password" required>
+		<input class="form__check" type="checkbox" id="check-in" name="check-in" value="check-in" checked>
+    	<label class="form__label form__label--small" for="check-in">Keep me signed in</label>
+		<button class="form__submit">Sign in</button>
+		</fieldset> 
+		<fieldset id="join_us" class="tabcontent--hidden">
+		<label for="first_name" class="form__label">First name</label>
+		<input class="form__field" type="text" name="first_name" id="first_name" required>
+		<label for="surname" class="form__label">Surname</label>
+		<input class="form__field" type="text" name="surname" id="surname" required>
+		<label for="password" class="form__label">Password</label>
+		<input class="form__field" type="password" name="password" id="password" required>
+		<label for="repeat_password" class="form__label">Repeat password</label>
+		<input class="form__field" type="password" name="repeat_password" id="repeat_password" required>
+		<input class="form__check" type="checkbox" id="check-in" name="check-in" value="check-in" checked>
+    	<label class="form__label form__label--small" for="check-in">Keep me signed in</label>
+		<button class="form__submit">Join</button>
+		</fieldset> 
+		<a href="" class="form__link">Forgot password</a>
+		<a href="" class="form__link">Create an account</a>
 	</form>
+	
 </body>
 </html>

@@ -36,7 +36,7 @@ body {
 	margin:0 25px 25px 0;
 }
 
-.form__link {
+.form__link, .tablinks {
 	color:rgba(255,255,255,.6);
 	text-decoration:none;
 	padding-bottom:3px;
@@ -49,7 +49,7 @@ body {
 .form__link:not(:last-of-type) {
 	margin-right:43px;
 }
-.form__link--nav {
+.tablinks {
 	border-bottom: 1px solid transparent;
 	font-weight:700;
 	font-size:18px;
@@ -60,19 +60,27 @@ body {
 .form__link:active,
 .form__link:hover,
 .form__link:focus,
-.form__link.active {
+.form__link.active,
+.tablinks:active,
+.tablinks:hover,
+.tablinks:focus,
+.tablinks.active {
 	border-bottom: 1px solid #e66a64;
 	color:#fff;
-}	
-.form__group {
+}
+ 
+.tabcontent--hidden {
+	display: none;
+}
+.tabcontent {
 	margin:0;
 	padding:0;
 	border:none;
 	outline:none;
-	color:#fff;
 }
 .form__label {
 	font-family:'Quicksand', Arial, sans-serif;
+	color:#fff;
 	font-size: 14px;
 	letter-spacing:1px;
 }
@@ -88,7 +96,7 @@ body {
 	background-color:transparent;
 	color:rgba(255,255,255,.8);
 	border:1px solid rgba(160,136,201,.8);
-	padding:10px 0;
+	padding:10px;
 	margin:10px 0;
 	outline:none;
 	transition:border .25s linear;
